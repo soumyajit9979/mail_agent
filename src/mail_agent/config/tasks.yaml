@@ -1,0 +1,13 @@
+write_mail:
+  description: >
+    handle communication at HBK School by sending emails based on {input}. 
+    interpreting the {input}, determining the context, and draft professional, 
+    personalized emails to address concerns, share updates, or send reminders 
+    efficiently and accurately.
+  expected_output: >
+    You will use the specified name, and description to generate the email. 
+    be professional.
+    the mail is to be sent directly to the reciever
+    mail format: eg: "abcd@gmail.com|this is the subject of the mail|this is the body..."
+  agent: mail_writer
+  output_file: mail.md

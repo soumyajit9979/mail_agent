@@ -1,0 +1,5 @@
+.env
+__pycache__/
+.venv
+/src/mail_agent/__pycache__
+/src/mail_agent/tools/__pycache__
