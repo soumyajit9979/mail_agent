@@ -25,7 +25,7 @@ class MailAgent():
 	def mail_writer(self) -> Agent:
 		return Agent(
 			config=self.agents_config['mail_writer'],
-			verbose=True,
+			# verbose=True,
 			llm=self.llm,
 			allow_delegation=False,
 			tools=[SendMail.send_mail],

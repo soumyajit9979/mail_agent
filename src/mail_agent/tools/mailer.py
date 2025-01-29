@@ -6,6 +6,7 @@ class SendMail:
     @tool("create mail")
     def send_mail(data):
         """
+        write a formal mail
         the input of the function should be a entire string format and no json format or dict format
         The input to this tool should be a pipe (|) separated text
         of length 3 (three), representing who to send the email to,

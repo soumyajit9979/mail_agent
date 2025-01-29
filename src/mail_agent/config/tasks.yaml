@@ -8,6 +8,7 @@ write_mail:
     You will use the specified name, and description to generate the email. 
     be professional.
     the mail is to be sent directly to the reciever
+    the body of the mail should be in a proper formal good format with line breaks included
     eg: "abcd@gmail.com|this is the subject of the mail|this is the body..."
   agent: mail_writer
   output_format: JSON
