@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "src/mail_agent/app.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "src/mail_agent/app.py" }
+    ]
+  }
+  
