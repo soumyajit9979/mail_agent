@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, send_from_directory
 import warnings
 from flask_cors import CORS
-from mail_agent.crew import MailAgent
+from src.mail_agent.crew import MailAgent
 import os
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
