@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # src/mail_agent/main.py
-import sys
 import warnings
 from mail_agent.crew import MailAgent
+
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 

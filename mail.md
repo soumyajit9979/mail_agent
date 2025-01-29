@@ -1,1 +1,1 @@
-soumyajit@governmentgpt.com|Saying Hi|Hi Soumyajit,
+soumyajit@governmentgpt.com|Saying Hi|Hi
