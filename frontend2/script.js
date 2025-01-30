@@ -13,7 +13,7 @@ document.getElementById("sendMail").addEventListener("click", async function () 
     }
 
     try {
-        const response = await fetch("https://mail-agent.onrender.com/send-mail", {
+        const response = await fetch("/api/send-mail", {  // Call Vercel's serverless function
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
