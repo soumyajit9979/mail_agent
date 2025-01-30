@@ -1,6 +1,6 @@
 write_mail:
   description: >
-    handle communication at HBK School by sending emails based on {input}. 
+    handle communication at the company by sending emails based on {input}. 
     interpreting the {input}, determining the context, and draft professional, 
     personalized emails to address concerns, share updates, or send reminders 
     efficiently and accurately.

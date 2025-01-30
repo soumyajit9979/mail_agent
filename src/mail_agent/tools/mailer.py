@@ -15,7 +15,7 @@ class SendMail:
         """
         print("------------------------------------------------------------------_!@_#!+@)#(+!@)#(@!+#)")
         print(data)
-        email="soumyajit94298@gmail.com"
+        email="isro9979@gmail.com"
         reciever, subject, message = data.split("|")
         print("will sennd")
 
@@ -24,7 +24,8 @@ class SendMail:
         server=smtplib.SMTP("smtp.gmail.com",587)
         server.starttls()
 
-        server.login(email, "pplp bxss wgbw byft")
+        # server.login(email, "pplp bxss wgbw byft")
+        server.login(email, "vqqx wndz uqrw nwkc")
 
         server.sendmail(email,reciever,text)
 
