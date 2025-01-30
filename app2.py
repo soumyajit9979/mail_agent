@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from mail_agent.crew import MailAgent
+from src.mail_agent.crew import MailAgent
 
 app = Flask(__name__)
 CORS(app)
