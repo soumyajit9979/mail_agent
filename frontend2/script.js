@@ -1,8 +1,14 @@
 document.getElementById("sendMail").addEventListener("click", async function () {
     const userInput = document.getElementById("mailInput").value;
+    const alertDiv = document.getElementById("alert");
+
+    // Clear previous alerts
+    alertDiv.style.display = 'none';
 
     if (!userInput) {
-        alert("Please enter email content!");
+        alertDiv.textContent = "Please enter email content!";
+        alertDiv.className = "alert error";
+        alertDiv.style.display = 'block';
         return;
     }
 
@@ -16,9 +22,20 @@ document.getElementById("sendMail").addEventListener("click", async function () 
         });
 
         const result = await response.json();
-        alert(result.message || result.error);
+        
+        if (result.message) {
+            alertDiv.textContent = result.message;
+            alertDiv.className = "alert success";
+        } else if (result.error) {
+            alertDiv.textContent = result.error;
+            alertDiv.className = "alert error";
+        }
+
+        alertDiv.style.display = 'block';
     } catch (error) {
         console.error("Error:", error);
-        alert("Something went wrong!");
+        alertDiv.textContent = "Something went wrong!";
+        alertDiv.className = "alert error";
+        alertDiv.style.display = 'block';
     }
 });
