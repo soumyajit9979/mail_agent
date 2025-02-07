@@ -43,6 +43,7 @@
             resize: none;
             margin-bottom: 20px;
             transition: border-color 0.3s;
+            display: none; /* Initially hidden */
         }
 
         textarea:focus {
@@ -90,14 +91,18 @@
             color: white;
         }
 
+        #sendMail {
+            display: none; /* Hidden until server is active */
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Email Generator</h1>
         <button id="startServer">Start Server</button>
-        <textarea id="mailInput" placeholder="Enter your email content here..." disabled></textarea><br>
-        <button id="sendMail" disabled>Generate Email</button>
+        <textarea id="mailInput" placeholder="Enter your email content here..."></textarea><br>
+        <button id="sendMail">Generate Email</button>
         <div id="alert" class="alert"></div>
     </div>
     

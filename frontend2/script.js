@@ -15,8 +15,10 @@ document.getElementById("startServer").addEventListener("click", async function 
         if (response.ok) {
             alertDiv.textContent = "Server is ready!";
             alertDiv.className = "alert success";
-            mailInput.disabled = false;
-            sendButton.disabled = false;
+
+            // Show the email input and "Generate Email" button
+            mailInput.style.display = "block";
+            sendButton.style.display = "block";
         } else {
             alertDiv.textContent = "Failed to wake up server. Try again!";
             alertDiv.className = "alert error";
@@ -41,7 +43,7 @@ document.getElementById("sendMail").addEventListener("click", async function () 
     }
 
     try {
-        const response = await fetch("/api/send-mail", {
+        const response = await fetch("https://mail-agent.onrender.com/send-mail", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ input: userInput })
