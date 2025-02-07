@@ -49,6 +49,12 @@
             border-color: #4a90e2;
         }
 
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
         button {
             padding: 12px 20px;
             background-color: #4a90e2;
@@ -100,8 +106,10 @@
         <h1>Email Generator</h1>
         <button id="startServer">Start Server</button>
         <div id="serverStatus" class="alert info" style="display: none;">Checking server...</div>
-        <textarea id="mailInput" placeholder="Enter your email content here..."></textarea><br>
-        <button id="sendMail">Generate Email</button>
+        <textarea id="mailInput" placeholder="Enter your email content here..."></textarea>
+        <div class="btn-container">
+            <button id="sendMail">Generate Email</button>
+        </div>
     </div>
     
     <script defer src="script.js"></script>
