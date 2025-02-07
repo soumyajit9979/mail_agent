@@ -1,7 +1,6 @@
 document.getElementById("startServer").addEventListener("click", async function () {
     const startButton = document.getElementById("startServer");
     const sendButton = document.getElementById("sendMail");
-    const mailInput = document.getElementById("mailInput");
     const alertDiv = document.getElementById("alert");
 
     alertDiv.textContent = "Starting server, please wait...";
@@ -16,8 +15,7 @@ document.getElementById("startServer").addEventListener("click", async function 
             alertDiv.textContent = "Server is ready!";
             alertDiv.className = "alert success";
 
-            // Show the email input and "Generate Email" button
-            mailInput.style.display = "block";
+            // Show "Generate Email" button when server is ready
             sendButton.style.display = "block";
         } else {
             alertDiv.textContent = "Failed to wake up server. Try again!";
