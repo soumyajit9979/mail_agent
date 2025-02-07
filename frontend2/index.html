@@ -85,13 +85,19 @@
             color: white;
         }
 
+        .alert.info {
+            background-color: #ff9800;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Email Generator</h1>
-        <textarea id="mailInput" placeholder="Enter your email content here..."></textarea><br>
-        <button id="sendMail">Generate Email</button>
+        <button id="startServer">Start Server</button>
+        <textarea id="mailInput" placeholder="Enter your email content here..." disabled></textarea><br>
+        <button id="sendMail" disabled>Generate Email</button>
         <div id="alert" class="alert"></div>
     </div>
     

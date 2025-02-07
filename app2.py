@@ -6,6 +6,10 @@ from src.mail_agent.crew import MailAgent
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/ping', methods=['GET'])
+def ping():
+    return jsonify({'message': 'Server is awake'}), 200
+
 @app.route('/send-mail', methods=['POST'])
 def send_mail():
     try:
