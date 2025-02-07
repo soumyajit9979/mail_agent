@@ -19,7 +19,7 @@ class SendMail:
         reciever, subject, message = data.split("|")
         print("will sennd")
 
-        text=f"Subject : {subject}\n\n{message}"
+        text=f"Subject : {subject}\nTo: {reciever}\n\n{message}"
 
         server=smtplib.SMTP("smtp.gmail.com",587)
         server.starttls()
