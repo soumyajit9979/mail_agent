@@ -1,4 +1,4 @@
-                                                                                                                                # This is a sample of agentic mail system 
+# This is a sample of agentic mail system 
 
 # MailAgent Crew
 
